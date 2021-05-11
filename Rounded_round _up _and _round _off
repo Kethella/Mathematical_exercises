@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Abgabe1_runden {
+
+	public static void main(String[] args) {
+		
+		Scanner num_benutzer = new Scanner(System.in);
+		
+		System.out.println("Gib eine ganze Zahl ein: ");
+		int num1 = num_benutzer.nextInt();
+		
+		System.out.println("Gib noch eine ganze Zahl ein: ");
+		int num2 = num_benutzer.nextInt();
+		
+		int ergebniss = (num1 + num2);		
+		System.out.println("Ergebnis: " + ergebniss);
+		
+		//Gerundet: aufrunden und abrunden 
+		
+		int gerundet = (ergebniss % 10);
+		
+		if (gerundet >= 5) 
+		{
+			int aufrunden = ((10 - gerundet) + ergebniss); 
+			System.out.println("Ergebnis gerundet: " + aufrunden);
+		}
+		else 
+		{
+			int abrunden = (ergebniss - gerundet);
+			System.out.println("Ergebnis gerundet: " + abrunden);
+		}
+			
+		
+		num_benutzer.close();
+	}
+
+}
