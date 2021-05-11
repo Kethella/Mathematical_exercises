@@ -1,0 +1,33 @@
+
+import java.util.Scanner;
+
+public class Formula_Baskara {
+	
+	static Scanner user_input = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		System.out.println("Value a: ");
+		double value_a = user_input.nextDouble();
+		
+		System.out.println("Value b: ");
+		double value_b = user_input.nextDouble();
+		
+		System.out.println("Value c: ");
+		double value_c = user_input.nextDouble();
+		
+		
+		double wurzel = Math.sqrt((Math.pow(value_b, 2)) - 4 * value_a * value_c);
+		double nenner = (2 * value_a);
+
+		double poly1 = ((-(value_b) + wurzel) / nenner);
+		double poly2 = ((-(value_b) - wurzel) / nenner);
+		
+		System.out.println("x1: " + poly1 + " und " + "x2: " + poly2);
+		
+		user_input.close();
+		
+
+	}
+
+}
