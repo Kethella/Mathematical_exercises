@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Summe_von_quadraten {
+
+	public static void main(String[] args) {
+		
+		int n = 0;
+		
+		Scanner user_number_input = new Scanner(System.in);
+		
+		
+		System.out.print("Zahl für n Quadratzahlen berechnen geben: ");
+		n = user_number_input.nextInt();
+		
+		int new_n = ((n*(n + 1)) * ((2*n) +1)) / 6;
+		
+		System.out.println("Die Ausgabe für n: " + new_n);
+		
+		
+		user_number_input.close();	
+    
+    }
+
+}
